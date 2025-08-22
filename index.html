@@ -25,14 +25,46 @@
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <nav class="nav">
+          <img
+            class="nav__logo"
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="logo_coffeeshop_dark"
+          />
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#recipes">Recetas</a></li>
+            <li>
+              <a class="nav__link" href="#reservation">Reservar una mesa</a>
+            </li>
+            <li><a class="nav__link" href="#contactos">Contactos</a></li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span-accent">Café de especialidad&nbsp;</span>en
+          Triple peaks
+        </h1>
+        <p class="header__description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+          para darte energía y motivar tu creatividad.
+        </p>
+        <img
+          class="header__image"
+          src="./images/inside_coffee_shop.png"
+          alt="Personas en la cafetería"
+        />
+      </header>
 
       <main class="content" id="main-content">
-        <section class="recipes" aria-labelledby="recipes-title">
+        <section class="recipes" id="recipes" aria-labelledby="recipes-title">
           <h2 class="recipes__title" id="recipes-title">Recetas</h2>
         </section>
 
-        <section class="reservation" aria-labelledby="reservation-title">
+        <section
+          class="reservation"
+          id="reservation"
+          aria-labelledby="reservation-title"
+        >
           <h2 class="reservation__title" id="reservation-title">
             Reservar una mesa
           </h2>
