@@ -88,15 +88,23 @@
 
 .header__paragraph {
   margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
   font-weight: 400;
+  color: #6f6f6f;
 }
 
 .header__footer {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-  color: #6f6f6f;
-  max-width: 800px;
+  position: absolute;
+  left: 80px;
+  bottom: 80px;
+}
+
+.header__address {
+  position: absolute;
+  right: 80px;
+  bottom: 80px;
 }
 
 .recipes {
