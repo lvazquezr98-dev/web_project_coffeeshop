@@ -108,6 +108,66 @@
           <h2 class="reservation__title" id="reservation-title">
             Reservar una mesa
           </h2>
+          <div class="reservation__container">
+          <form
+            class="reservation__form form"
+            action="#/procesar-formulario"
+            method="POST"
+            novalidate
+          >
+            <label class="form__label" for="name">Nombre*</label>
+            <input
+              type="text"
+              class="form__input"
+              minlength="3"
+              maxlength="20"
+              required
+              placeholder="Nombre"
+              id="name"
+            />
+            <label class=" form__label" for="number">Numero de comensales*</label>
+            <input type="number" class="form__input" min="1" max="8" required placeholder="Numero de comensales" id="number">
+
+            <label class="form__label" for="date">Fecha y hora*</label>
+            <div class="form__row">
+        <input
+          type="date"
+          class="form__input"
+          id="date"
+          name="date"
+          required
+        />
+
+        <label class="form__label" for="correoElectrónico"
+          >Tu correo electrónico*</label
+        >
+        <input
+          type="email"
+          class="form__input"
+          required
+          placeholder="Introduce tu correo electrónico"
+          id="correoElectrónico"
+        />
+            </div>
+
+
+        <div class="form__buttons">
+          <button type="submit" class="form__button">
+            Reservar una mesa
+          </button>
+        </div>
+        
+        <div class="form__checkbox-group">
+          <label class="form__checkbox-label">
+            <input
+              type="checkbox"
+              name="terms"
+              value="terms"
+              class="form__checkbox"
+              required
+            /> Acepto los términos de uso</label>
+        </div>
+          </form>
         </section>
       </main>
       <footer class="footer" role="contentinfo"></footer>
